@@ -1,6 +1,5 @@
 # Floorplan → JSON (OpenCV + UNet + OCR)
 
-Repo: `1vlex/floorplan-json-pipeline`
 
 ![Original / GT / OpenCV / UNet](assets/output.png)
 
