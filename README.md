@@ -1,4 +1,4 @@
-# Floorplan → JSON (OpenCV + UNet + OCR)
+# Floorplan -> JSON (OpenCV + UNet + OCR)
 
 
 ![Original / GT / OpenCV / UNet](assets/output.png)
