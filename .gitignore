@@ -223,17 +223,9 @@ env/
 .DS_Store
 Thumbs.db
 
-# Jupyter
-.ipynb_checkpoints/
+model/**/*.txt
+outputs/**/*.txt
 
-# Project data & artifacts
-data/
-masks/
-model/
-outputs/
+notebooks/**/*.ipynb
+notebooks/.ipynb_checkpoints/
 
-# Weights / checkpoints / logs
-*.pth
-
-# EasyOCR cache
-~/.easyocr/
