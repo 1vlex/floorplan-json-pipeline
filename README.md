@@ -203,33 +203,6 @@ OCR по умолчанию включен (флаг `--no_ocr` не задан)
 
 ---
 
-### 6. Как использовать только OpenCV решение
-
-Если нужно получить только OpenCV JSON по своим изображениям (без UNet), можно:
-
-- использовать папку с произвольными планами вместо CubiCasa;
-- не указывать `--use_unet` (по умолчанию скрипт включает только OpenCV).
-
-Пример для произвольной папки с картинками:
-
-```bash
-python src/pipeline_cv.py   --input_dir  path/to/your/floorplans   --output_dir outputs/opencv_only   --device auto
-```
-
-Если нужно отключить OCR и оставить только геометрию стен:
-
-```bash
-python src/pipeline_cv.py   --input_dir  path/to/your/floorplans   --output_dir outputs/opencv_only_no_ocr   --device auto   --no_ocr
-```
-
-В обоих случаях в `outputs/.../opencv_infer` появятся JSON файлы с полями:
-
-- `meta` - информация об источнике и бэкенде;
-- `walls` - список отрезков стен;
-- `ocr` - список распознанных текстов (если OCR не отключен).
-
----
-
 ## Результаты
 
 Метрики посчитаны на тестовом наборе из 400 изображений (CubiCasa5k COCO версия),  
