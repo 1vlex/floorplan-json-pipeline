@@ -22,8 +22,8 @@
 ├── assets/
 │   └── overview.png               # пример коллажа Original / GT / OpenCV / UNet / OCR
 ├── notebooks/
-│   ├── 01_eda_cubicasa5k.ipynb    # EDA датасета, примеры разметки
-│   └── viz_predictions.ipynb      # визуализация GT / OpenCV / UNet / OCR
+│   ├── 01_eda_cubicasa5k.ipynb    # EDA датасета, примеры разметки (gitignored)
+│   └── viz_predictions.ipynb      # визуализация GT / OpenCV / UNet / OCR (gitignored)
 ├── src/
 │   ├── data_preprocess.py         # COCO аннотации -> GT маски 0/1/2/3
 │   ├── train_unet.py              # обучение UNet (ResNet34 encoder, 4 класса)
@@ -31,17 +31,17 @@
 │   ├── ocr.py                     # EasyOCR + повороты/флипы + NMS
 │   ├── pipeline_cv.py             # общий инференс: CV / UNet / OCR -> JSON
 │   └── eval.py                    # сравнение JSON предсказаний с GT масками
-├── data/                          # сюда нужно положить CubiCasa5k COCO (gitignored)
+├── data/                          # сюда нужно положить CubiCasa5k COCO
 │   └── cubicasa5k-2.v1i.coco/     # train / valid / test / *_annotations.coco.json
-├── masks/                         # сгенерированные GT маски 0/1/2/3 (gitignored)
+├── masks/                         # сгенерированные GT маски 0/1/2/3
 │   ├── train/
 │   ├── valid/
 │   └── test/
-├── model/                         # сюда сохраняются веса UNet и логи (gitignored)
+├── model/                         # сюда сохраняются веса UNet и логи
 │   ├── unet_resnet34_best.pth
 │   ├── unet_resnet34_last.pth
 │   └── train_log.txt
-├── outputs/                       # инференс + метрики (gitignored)
+├── outputs/                       # инференс + метрики
 │   ├── viz_valid_100/             # json примеры для визуализации (cv + unet + ocr)
 │   └── test_pred/                 # json предсказания для теста + metrics_*.txt
 ├── requirements.txt               # зависимости проекта
