@@ -2,7 +2,7 @@
 
 Repo: `1vlex/floorplan-json-pipeline`
 
-![Original / GT / OpenCV / UNet](assets/overview.png)
+![Original / GT / OpenCV / UNet](assets/output.png)
 
 Небольшой прототип пайплайна, который по изображению плана квартиры строит
 структурированный JSON с геометрией стен/дверей/окон и результатами OCR.
