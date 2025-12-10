@@ -225,7 +225,7 @@ Thumbs.db
 
 model/**/*.txt
 outputs/**/*.txt
-
+assets/**/*.png
 notebooks/**/*.ipynb
 notebooks/.ipynb_checkpoints/
 
