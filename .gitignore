@@ -205,3 +205,35 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+
+
+
+# Virtual env
+.venv/
+venv/
+env/
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Project data & artifacts
+data/
+masks/
+model/
+outputs/
+
+# Weights / checkpoints / logs
+*.pth
+
+# EasyOCR cache
+~/.easyocr/
