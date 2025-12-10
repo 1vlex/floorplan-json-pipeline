@@ -1,0 +1,34 @@
+Backend: unet
+GT masks dir: E:\test_work\masks\test
+Predictions dir: E:\test_work\outputs\test_pred\unet_infer
+Tolerant radius: 2
+Line thickness: 5
+
+Class: wall
+  images_used: 400
+  IoU:          0.3074
+  IoU_tolerant: 0.4567
+  Precision:    0.4741
+  Recall:       0.4664
+  F1:           0.4702
+  Mean distance (px):  3.6079
+
+Class: door
+  images_used: 399
+  IoU:          0.3230
+  IoU_tolerant: 0.4519
+  Precision:    0.4080
+  Recall:       0.6078
+  F1:           0.4882
+  Mean distance (px):  12.6298
+
+Class: window
+  images_used: 398
+  IoU:          0.2917
+  IoU_tolerant: 0.4477
+  Precision:    0.4782
+  Recall:       0.4279
+  F1:           0.4516
+  Mean distance (px):  11.7505
+
+mIoU (over present classes): 0.3073
