@@ -42,8 +42,8 @@
 │   ├── unet_resnet34_last.pth
 │   └── train_log.txt
 ├── outputs/                       # инференс + метрики
-│   ├── viz_valid_100/             # json примеры для визуализации (cv + unet + ocr)
-│   └── test_pred/                 # json предсказания для теста + metrics_*.txt
+│   ├── U-net(или OpenCV)/         # json примеры для визуализации (cv + unet + ocr)
+│   └── + metrics_*.txt
 ├── requirements.txt               # зависимости проекта
 ├── README.md
 └── .gitignore
